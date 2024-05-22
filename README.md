@@ -1,4 +1,4 @@
-# ML Model Deployment
+# ML Housing Prediction
 
 This project demonstrates how to deploy a machine learning model using Flask, Docker, and Heroku.
 
@@ -9,11 +9,15 @@ This project demonstrates how to deploy a machine learning model using Flask, Do
    ```bash
    pip install -r requirements.txt
    ```
-3. Train the model:
+3. Download the dataset
+   ```bash
+   python download_dataset.py
+   ```
+4. Train the model:
    ```bash
    python train_model.py
    ```
-4. Run the Flask app:
+5. Run the Flask app:
    ```bash
    python app.py
    ```
@@ -28,18 +32,18 @@ This project demonstrates how to deploy a machine learning model using Flask, Do
 
 1. Build the Docker image:
    ```bash
-   docker build -t ml_model_api .
+   docker build -t ml-housing-prediction .
    ```
 2. Run the Docker container:
    ```bash
-   docker run -p 5000:80 ml_model_api
+   docker run -p 5000:80 ml-housing-prediction
    ```
 
 ## Heroku Deployment
 
 1. Create a Heroku app:
    ```bash
-   heroku create ml-model-api
+   heroku create ml-housing-prediction
    ```
 2. Push to Heroku:
    ```bash
