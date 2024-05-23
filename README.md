@@ -9,7 +9,7 @@ This project demonstrates how to deploy a machine learning model using Flask, Do
    ```bash
    pip install -r requirements.txt
    ```
-3. Download the dataset
+3. (Optional) This repo already has the dataset (`data/housing.csv`) but if you are looking for a script to download any dataset from Kaggle with some potential modifications, please use the below script. This requires Kaggle account and API setup on your command line to run successfully
    ```bash
    python download_dataset.py
    ```
@@ -25,7 +25,7 @@ This project demonstrates how to deploy a machine learning model using Flask, Do
 ## Test
 1. Local Testing
    ```bash
-   curl -X POST -H "Content-Type: application/json" -d '{"OverallQual": 7, "GrLivArea": 1710, "GarageCars": 2, "GarageArea": 548, "TotalBsmtSF": 856, "FullBath": 2, "1stFlrSF": 856, "TotRmsAbvGrd": 8, "YearBuilt": 2003, "YearRemodAdd": 2003}' http://127.0.0.1:5000/predict
+   curl -X POST -H "Content-Type: application/json" -d '{"OverallQual": 7, "GrLivArea": 1710, "GarageCars": 2, "GarageArea": 548, "TotalBsmtSF": 856, "FullBath": 2, "1stFlrSF": 856, "TotRmsAbvGrd": 8, "YearBuilt": 2003, "YearRemodAdd": 2003}' http://localhost:6000/predict
    ```
 
 ## Docker Instructions
