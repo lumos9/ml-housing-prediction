@@ -9,7 +9,7 @@ This project demonstrates how to deploy a machine learning model using Flask, Do
    ```bash
    pip install -r requirements.txt
    ```
-3. (Optional) This repo already has the dataset (`data/housing.csv`) but if you are looking for a script to download any dataset from Kaggle with some potential modifications, please use the below script. This requires Kaggle account and API setup on your command line to run successfully
+3. (Optional) This repo already has the dataset (`data/housing.csv`) but if you are looking for a script to download any dataset from Kaggle with some potential modifications, please use the below script. This requires Kaggle account and API setup on your command line [https://www.kaggle.com/docs/api] to run successfully
    ```bash
    python download_dataset.py
    ```
